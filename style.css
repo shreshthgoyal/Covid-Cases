@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+background: linear-gradient(to right, #1F1C18, #8E0E00); 
+
+
+  }
+
+  .head{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1%;
+    font-size: 3em;
+    font-weight: 600;
+    display: flex;
+    cursor: pointer;
+    text-shadow: 0px 0px 2px lavender;
+    transition-duration: 1s;
+  }
+
+  .head:hover {
+    text-shadow: 0px 0px 5px lavender;
+  }
+
+  .input {
+    margin-bottom: 1%;
+    width: 20em;
+    border-style: dotted;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    background-color: lavenderblush;
+
+  }
+
+
+  
+  .container {
+    height: 90vh;
+    width: 90%;
+    padding: 20px 15px;
+    margin: 0 20px;
+  
+    overflow-y: scroll;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .card {
+    text-align: center;
+    width: 350px;
+    height: 450px;
+
+background: rgba( 236, 164, 164, 0.55 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  
+    padding: 20px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    animation: myanimation 1s ease;
+    transition: transform 1.5s;
+  }
+
+ .state,.confirmed,.active,.death{
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.05);
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: inherit 0 5px 12px 0 rgba(31, 38, 135, 0.37);
+  transition-duration: 1.5s;
+ }
+
+
+  .card:hover{
+     transform: scale(1.05); 
+  }
+  
+  .state-name,.confirmed-cases,.active-cases,.death-count {
+    font-size: 15px;
+    margin: 10px 0 20px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px 12px;
+    border-radius: 15px;
+  }
+
+  .state-name:hover ,.confirmed-cases:hover ,.active-cases:hover ,.death-count:hover {
+      text-decoration: underline;
+      font-size: 17px;
+  }
+
+  .circle1,
+  .circle2, .circle3 , .circle4 {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(8px);
+    z-index: -5;
+  }
+  
+  .circle1 {
+    background-image: linear-gradient(120deg, black 0%, darkred 100%);
+    width: 600px;
+    height: 600px;
+    top: -100px;
+    left: -100px;
+  }
+  .circle2 {
+    background-image: linear-gradient(120deg, black 0%, #f5576c 100%);
+    width: 800px;
+    height: 800px;
+    bottom: -150px;
+    right: -110px;
+  }
+  .circle3 {
+    background-image: linear-gradient(240deg, black 0%, crimson 100%);
+    width: 400px;
+    height: 400px;
+    top: -100px;
+    right: -100px;
+  }
+  .circle4 {
+    background-image: linear-gradient(30deg, black 0%, maroon 100%);
+    width: 500px;
+    height: 500px;
+    bottom: -150px;
+    left: -110px;
+  }
+ 
