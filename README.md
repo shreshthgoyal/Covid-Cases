@@ -1,1 +1,1 @@
-# Covid-Cases
+This is a sample repository.
