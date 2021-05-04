@@ -29,7 +29,7 @@ input.addEventListener("keyup", (e) => {
 });
 
 
-fetch("https://api.covid19api.com/live/country/india/status/confirmed/date/2021-05-01")
+fetch("https://api.covid19api.com/live/country/india/status/confirmed/date/2021-05-03")
   .then((data) => {
     return data.text();
   })
